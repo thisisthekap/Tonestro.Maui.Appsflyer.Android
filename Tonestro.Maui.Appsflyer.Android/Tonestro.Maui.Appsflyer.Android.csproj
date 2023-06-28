@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Tonestro.Maui.Appsflyer.Android</PackageId>
+    <Version>6.5.4.1</Version>
+    <Description>Contains bindings for https://support.appsflyer.com/hc/en-us/articles/207032126-AppsFlyer-SDK-Integration-Android</Description>
+    <Authors>Christian Kapplmüller, Albilaga</Authors>
+    <Company>fun.music IT GmbH</Company>
+    <PackageOutputPath>nugetoutput</PackageOutputPath>
+    <PackageLicensePath>..\LICENSE.txt</PackageLicensePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\AF-Android-SDK.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+  </ItemGroup>
+</Project>
